@@ -12,11 +12,11 @@
 .PARAMETER Algorithm
     Set hash algorithm(s). 
     Supports: MD5, SHA1, SHA256, SHA384, SHA512, MACTripleDES, RIPEMD160
-    Default SHA256 hash.
+    Default SHA256
 
 .EXAMPLE
     .\Get-FileHash
-    Generates MD5 (default) file hashes for selected file(s).
+    Generates SHA256 (default) file hashes for selected file(s).
 
 .EXAMPLE
     .\Get-FileHash -Algorithm SHA1, RIPEMD160, MD5
@@ -24,7 +24,7 @@
 
 .EXAMPLE
     .\Get-FileHash -Path '\\NetworkShare\Foo\Bar\file.txt', 'C:\SomeDir\file.docx'
-    Generates MD5 (default) file hashes for [\\NetworkShare\Foo\Bar\file.txt] and [C:\SomeDir\file.docx].
+    Generates SHA256 (default) file hashes for [\\NetworkShare\Foo\Bar\file.txt] and [C:\SomeDir\file.docx].
 
 .NOTES
     Author: JBear
